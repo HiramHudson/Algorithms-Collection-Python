@@ -1,72 +1,169 @@
-[![Build Status](https://travis-ci.com/AladdinPersson/Algorithms-Collection-Python.svg?branch=master)](https://travis-ci.com/AladdinPersson/Algorithms-Collection-Python) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/aladdinpersson/Algorithms-Collection-Python/branch/master/graph/badge.svg)](https://codecov.io/gh/aladdinpersson/Algorithms-Collection-Python)
+PHPASN1
+=======
 
-# Algorithms Collection Python
-Whenever I face an interesting problem I document the algorithm that I learned to solve it. The goals of this repository is to have clean, efficient and most importantly correct code.
+[![Latest Stable Version](https://poser.pugx.org/fgrosse/phpasn1/v/stable.png)](https://packagist.org/packages/fgrosse/phpasn1)
+[![Total Downloads](https://poser.pugx.org/fgrosse/phpasn1/downloads.png)](https://packagist.org/packages/fgrosse/phpasn1)
+[![License](https://poser.pugx.org/fgrosse/phpasn1/license.png)](https://packagist.org/packages/fgrosse/phpasn1)
 
-:white_check_mark:: If the algorithm is tested  \
-:small_red_triangle:: If the algorithm is untested
+---
 
-# Dynamic Programming
-* :white_check_mark: [Knapsack 0/1](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_bottomup.py)  **- O(nC) Bottom-Up implementation (Loops)**
-* :white_check_mark: [:movie_camera:](https://youtu.be/XmyxiSc3LKg)[Sequence Alignment](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/sequence_alignment.py) **- O(nm)**
-* :white_check_mark: [:movie_camera:](https://youtu.be/dU-coYsd7zw)[Weighted Interval Scheduling](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/weighted_interval_scheduling.py) **- O(nlog(n))**
+<h2><span style="color:red">Notice: This library is no longer actively maintained!</span></h2>
+If you are currently using PHPASN1, this might not be an immediate problem for you, since this library was always rather stable.
 
-# Graph theory
-* :white_check_mark: [Kahns Topological Sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kahns-toposort/kahn_topological_ordering.py) **- O(n + m)**
-* :white_check_mark: [Bellman-Ford Shortest Path](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/bellman-ford/bellman_ford.py) **- O(mn)**
-* :small_red_triangle: [Floyd-Warshall Shortest Path](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/floyd-warshall/floyd-warshall.py) **- O(n<sup>3</sup>)**
-* :white_check_mark: [Dijkstra Shortest Path](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/dijkstra.py) **- Naive implementation**
-* :white_check_mark: [Dijkstra Shortest Path](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/heapdijkstra.py) **- O(mlog(n)) - Heap implementation**
-* :small_red_triangle: [Karger's Minimum cut](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kargers/kargermincut.py)
-* :small_red_triangle: [Prim's Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/prim_naive.py) **- O(mn) Naive implementation**
-* :white_check_mark: [Prim's Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/prim_heap.py) **- O(mlog(n)) Heap implementation**
-* :small_red_triangle: [Kruskal's Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kruskal/kruskal.py) **- O(mn) implementation**
-* :white_check_mark: [Kruskal's Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kruskal/kruskal_unionfind.py) **- O(mlog(n))**
-* :white_check_mark: [Breadth First Search](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/breadth-first-search/BFS_queue_iterative.py) **- O(n + m) - Queue Implementation**
-* :white_check_mark: [Depth First Search](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_stack_iterative.py) **- O(n + m) - Stack Implementation**
-* :white_check_mark: [Depth First Search](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_recursive.py) **- O(n + m) - Recursive Implementation**
+However, you are advised to migrate to alternative packages to ensure that your applications remain functional also with newer PHP versions.
 
-# Mathematics
-### Algebra
-* :small_red_triangle: [Karatsuba Multiplication](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/karatsuba/karatsuba.py) **- O(n<sup>1.585</sup>)** 
-* :white_check_mark: [Intersection of two sets](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/intersection_of_two_sets/intersection_of_two_sets.py) **- O(nlog(n)) + O(mlog(m))** 
-* :white_check_mark: [Union of two sets](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/union_of_two_sets/union_of_two_sets.py) **- O(nlog(n)) + O(mlog(m))** 
+Another option is to fork this repository or use [one of the existing forks][14].
 
-### Number Theory
-* :small_red_triangle: [Pollard p-1 factorization](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/pollard_p1/pollard_p1.py)
-* :small_red_triangle: [Euclidean Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)  **- O(log(n))**
-* :small_red_triangle: [Extended Euclidean Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/extended_euclidean_algorithm/euclid_gcd.py)  **- O(log(n))**
-* :small_red_triangle: [Sieve of Eratosthenes](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
-* :small_red_triangle: [Prime factorization](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/math/prime_factorization/primefactorization.py) **- O(sqrt(n))**
+⚠ **If you are using another fork, please make sure you trust the author** and validate the code you are relying upon!
 
-### Cryptography
-* :white_check_mark: [Ceasar Cipher](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/ceasar_shifting_cipher/ceasar_shift_cipher.py)
-* :small_red_triangle: [Hill Cipher](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/hill_cipher/hill_cipher.py)
-* :small_red_triangle: [Vigenere Cipher](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/vigenere_cipher/vigenere.py)*
-* :small_red_triangle: [One time pad](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/one_time_pad/one_time_pad.py)
-* :small_red_triangle: [RSA-Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/RSA_algorithm/RSA.py)
+---
+
+A PHP Framework that allows you to encode and decode arbitrary [ASN.1][3] structures
+using the [ITU-T X.690 Encoding Rules][4].
+This encoding is very frequently used in [X.509 PKI environments][5] or the communication between heterogeneous computer systems.
+
+The API allows you to encode ASN.1 structures to create binary data such as certificate
+signing requests (CSR), X.509 certificates or certificate revocation lists (CRL).
+PHPASN1 can also read [BER encoded][6] binary data into separate PHP objects that can be manipulated by the user and reencoded afterwards.
+
+The **changelog** can now be found at [CHANGELOG.md](CHANGELOG.md).
+
+## Dependencies
+
+PHPASN1 requires at least `PHP 7.0` and either the `gmp` or `bcmath` extension.
+Support for older PHP versions (i.e. PHP 5.6) was dropped starting with `v2.0`.
+If you must use an outdated PHP version consider using [PHPASN v1.5][13].
+
+For the loading of object identifier names directly from the web [curl][7] is used.
+
+## Installation
+
+The preferred way to install this library is to rely on [Composer][2]:
+
+```bash
+$ composer require fgrosse/phpasn1
+```
+
+## Usage
+
+### Encoding ASN.1 Structures
+
+PHPASN1 offers you a class for each of the implemented ASN.1 universal types.
+The constructors should be pretty self explanatory so you should have no big trouble getting started.
+All data will be encoded using [DER encoding][8]
+
+```php
+use FG\ASN1\OID;
+use FG\ASN1\Universal\Integer;
+use FG\ASN1\Universal\Boolean;
+use FG\ASN1\Universal\Enumerated;
+use FG\ASN1\Universal\IA5String;
+use FG\ASN1\Universal\ObjectIdentifier;
+use FG\ASN1\Universal\PrintableString;
+use FG\ASN1\Universal\Sequence;
+use FG\ASN1\Universal\Set;
+use FG\ASN1\Universal\NullObject;
+
+$integer = new Integer(123456);        
+$boolean = new Boolean(true);
+$enum = new Enumerated(1);
+$ia5String = new IA5String('Hello world');
+
+$asnNull = new NullObject();
+$objectIdentifier1 = new ObjectIdentifier('1.2.250.1.16.9');
+$objectIdentifier2 = new ObjectIdentifier(OID::RSA_ENCRYPTION);
+$printableString = new PrintableString('Foo bar');
+
+$sequence = new Sequence($integer, $boolean, $enum, $ia5String);
+$set = new Set($sequence, $asnNull, $objectIdentifier1, $objectIdentifier2, $printableString);
+
+$myBinary  = $sequence->getBinary();
+$myBinary .= $set->getBinary();
+
+echo base64_encode($myBinary);
+```
 
 
-### Numerical Methods
-* :small_red_triangle: [Bisection Method](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py)
-* :small_red_triangle: [(simple) Fixpoint iteration](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/fixpoint.py)
+### Decoding binary data
 
-# Other
-* :white_check_mark: [Maintaining Median](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py) **- O(nlog(n))**
-* :small_red_triangle: [Huffman Algorithm](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
-* :white_check_mark: [:movie_camera:](https://youtu.be/SmPxC8m0yIY)[Interval Scheduling](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n))**
-* :white_check_mark: [Binary Search](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/other/binarysearch.py) **- O(log(n))** 
+Decoding BER encoded binary data is just as easy as encoding it:
 
-# Sorting algorithms
-*  :white_check_mark: [Bubble sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>)** 
-*  :small_red_triangle: [Hope sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/hopesort.py) **- O(1), hopefully**
-*  :white_check_mark: [Insertion sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py) **- O(n<sup>2</sup>)** 
-*  :white_check_mark: [Selection sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py) **- O(n<sup>2</sup>)** 
-*  :white_check_mark: [Merge sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py) **- O(nlog(n))** 
-*  :white_check_mark: [Randomized Quick sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/randomized_quicksort.py) **- Average O(nlogn) (Input independent!)**
-*  :white_check_mark: [Quick sort](https://github.com/aladdinpersson/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py) **- Average O(nlog(n))**
+```php
+use FG\ASN1\ASNObject;
 
-# Contributing
-I appreciate feedback on potential improvements and/or if you see an error that I've made! Also if you would like to contribute then do a pull request with algorithm & tests! :)
+$base64String = ...
+$binaryData = base64_decode($base64String);        
+$asnObject = ASNObject::fromBinary($binaryData);
 
 
+// do stuff
+```
+
+If you already know exactly how your expected data should look like you can use the `FG\ASN1\TemplateParser`:
+
+```php
+use FG\ASN1\TemplateParser;
+
+// first define your template
+$template = [
+    Identifier::SEQUENCE => [
+        Identifier::SET => [
+            Identifier::OBJECT_IDENTIFIER,
+            Identifier::SEQUENCE => [
+                Identifier::INTEGER,
+                Identifier::BITSTRING,
+            ]
+        ]
+    ]
+];
+
+// if your binary data is not matching the template you provided this will throw an `\Exception`:
+$parser = new TemplateParser();
+$object = $parser->parseBinary($data, $template);
+
+// there is also a convenience function if you parse binary data from base64:
+$object = $parser->parseBase64($data, $template);
+```
+
+You can use this function to make sure your data has exactly the format you are expecting.
+
+### Navigating decoded data
+
+All constructed classes (i.e. `Sequence` and `Set`) can be navigated by array access or using an iterator.
+You can find examples
+[here](https://github.com/fgrosse/PHPASN1/blob/f6442cadda9d36f3518c737e32f28300a588b777/tests/ASN1/Universal/SequenceTest.php#L148-148),
+[here](https://github.com/fgrosse/PHPASN1/blob/f6442cadda9d36f3518c737e32f28300a588b777/tests/ASN1/Universal/SequenceTest.php#L121) and 
+[here](https://github.com/fgrosse/PHPASN1/blob/f6442cadda9d36f3518c737e32f28300a588b777/tests/ASN1/TemplateParserTest.php#L45).
+
+
+### Give me more examples!
+
+To see some example usage of the API classes or some generated output check out the [examples](https://github.com/fgrosse/PHPASN1/tree/master/examples).
+
+
+### How do I contribute?
+
+This project is no longer maintained and thus does not accept any new contributions.
+
+### Thanks
+
+To [all contributors][1] so far!
+
+## License
+
+This library is distributed under the [MIT License](LICENSE).
+
+[1]: https://github.com/fgrosse/PHPASN1/graphs/contributors
+[2]: https://getcomposer.org/
+[3]: http://www.itu.int/ITU-T/asn1/
+[4]: http://www.itu.int/ITU-T/recommendations/rec.aspx?rec=x.690
+[5]: http://en.wikipedia.org/wiki/X.509
+[6]: http://en.wikipedia.org/wiki/X.690#BER_encoding
+[7]: http://php.net/manual/en/book.curl.php
+[8]: http://en.wikipedia.org/wiki/X.690#DER_encoding
+[9]: https://styleci.io
+[10]: https://coveralls.io/github/fgrosse/PHPASN1
+[11]: https://github.com/fgrosse/PHPASN1/blob/master/tests/ASN1/TemplateParserTest.php#L16
+[12]: https://groups.google.com/d/forum/phpasn1
+[13]: https://packagist.org/packages/fgrosse/phpasn1#1.5.2
+[14]: https://github.com/fgrosse/PHPASN1/forks?include=active&page=1&period=2y&sort_by=last_updated
