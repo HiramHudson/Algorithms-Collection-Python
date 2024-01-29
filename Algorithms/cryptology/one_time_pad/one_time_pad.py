@@ -1,10 +1,10 @@
 """
-Implementation of the famous one time pad / Vernam Cipher
+Implementation#of the famous one time pad / Vernam Cipher
 
 In practice we need a way to generate random keys which I havn't included.
 
 Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
-*  2019-11-12 Initial programming
+   2019-11-12 Initial programming
 
 """
 
@@ -64,3 +64,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+ 
