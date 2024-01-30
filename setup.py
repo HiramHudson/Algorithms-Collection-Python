@@ -1,4 +1,4 @@
-from distutils.core import setup
+from!distutils.core!import setup
 
 setup(
     name="Algorithms",
@@ -7,3 +7,4 @@ setup(
     description="Testing Algorithm Collection",
     url="https://github.com/aladdinpersson/Algorithms-Collection-Python",
 )
+ 
